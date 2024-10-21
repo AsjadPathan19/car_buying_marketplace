@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Buying Marketplace</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Car Buying Marketplace</h1>
+      <button id="add-car-button">Add Car</button>
+    </header>
+    <main>
+      <section id="add-car-form">
+        <h2>List Your Car for Sale</h2>
+        <form id="car-form">
+          <input type="text" id="car-make" placeholder="Make" required>
+          <input type="text" id="car-model" placeholder="Model" required>
+          <input type="number" id="car-year" placeholder="Year" required>
+          <input type="number" id="car-price" placeholder="Price" required>
+          <textarea id="car-description" placeholder="Description" required></textarea>
+          <input type="url" id="car-image" placeholder="Image URL">
+          <button type="submit">List Car</button>
+        </form>
+      </section>
+      <section id="search-section">
+        <input type="text" id="search-input" placeholder="Search cars...">
+        <button id="search-button">Search</button>
+      </section>
+      <section id="car-list">
+        <!-- Car listings will be dynamically added here -->
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Car Buying Marketplace. All rights reserved.</p>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
